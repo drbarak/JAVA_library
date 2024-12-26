@@ -31,8 +31,9 @@
  *  Folder ממן 13 includes:  -- using Recursion --
  *      Ex13.extreme - find largest number in all possible paths from
  *          top left to bottom right, moving up/down/left/right
- *      Ex13.specialArr - arrange array with less and more neighbours
  *      Ex13.first
  *      Ex13.longestNearlyPalindrome
+ *        -- most efficient method --
+ *      Ex13.specialArr - arrange array with less and more neighbours
  *  
  */
