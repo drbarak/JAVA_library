@@ -35,6 +35,14 @@ public class Print
     {
         p("" + n1 + ", " + n2 + ", " + n3 + ", " + n4);
     }
+    public static void p(int n1, int n2, int n3, int n4, int n5)
+    {
+        p("" + n1 + ", " + n2 + ", " + n3 + ", " + n4 + ", " + n5);
+    }
+    public static void p(int n1, int n2, int n3, int n4, int n5, int n6)
+    {
+        p("" + n1 + ", " + n2 + ", " + n3 + ", " + n4 + ", " + n5 + ", " + n6);
+    }
     public static void p(int[] arr)
     {
         p("", arr);
@@ -57,13 +65,13 @@ public class Print
     }
     public static void p(int[][] arr)
     {
-        // not using Arrays.deepToString(arr)) becuse print all lines in one row
+        // not using Arrays.deepToString(arr)) because print all lines in one row
         for (int i = 0; i < arr.length; i++)
             p(arr[i]);
     }
     public static void p(char[][] arr)
     {
-        // not using Arrays.deepToString(arr)) becuse print all lines in one row
+        // not using Arrays.deepToString(arr)) because print all lines in one row
         for (int i = 0; i < arr.length; i++)
             p(arr[i]);
     }
