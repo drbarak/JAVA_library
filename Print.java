@@ -1,9 +1,11 @@
+package Library;
+
 import java.util.Arrays;
 /**
  * Class Print to allow to use method p() to print messages instead of System.out...
  * After making changes and compiling, need to create a Jar file names MyLib.jar
  * 
- * The class is automatically use in each new project once it is set as a
+ * The class is automatically used in each new project once it is set as a
  * user library from Tools->preferences for all projects
  *
  * @author (צבי ברק)
@@ -11,9 +13,33 @@ import java.util.Arrays;
  */
 public class Print
 {
-    public static void p(String s)
+    /*
+    static void pNothing(String s)
     {
         System.out.println(s);
+    }
+    protected static void pProtected(String s)
+    {
+        System.out.println(s);
+    }
+    private static void pPrivate(String s)
+    {
+        System.out.println(s);
+    }
+    */
+    
+    public static void p(String s)
+
+    {
+        System.out.println(s);
+    }
+    public static void p()
+    {
+        p("");
+    }
+    public static void pN(String s)
+    {
+        System.out.print(s);
     }
     public static void p(int s)
     {
@@ -69,10 +95,20 @@ public class Print
         for (int i = 0; i < arr.length; i++)
             p(arr[i]);
     }
+    public static void p(String s, int[][] arr)
+    {
+        p(s);
+        p(arr);
+    }
     public static void p(char[][] arr)
     {
         // not using Arrays.deepToString(arr)) because print all lines in one row
         for (int i = 0; i < arr.length; i++)
             p(arr[i]);
+    }
+    public static void p(String s, char[][] arr)
+    {
+        p(s);
+        p(arr);
     }
 }
